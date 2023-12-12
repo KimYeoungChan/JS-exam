@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>별별별</title>
+</head>
+
+<body>
+  <script>
+    // 문제 1) 별별별
+    // 자연수를 입력 받아 해당 수만큼 별을 찍는 문장려 변환 함수 작성하기
+    // 예를 들면 5를 입력하면 별이 5개, 7이면 별이 7개, 12개이면 별이 12개이다
+
+
+    /* user code */
+    function answer(num) {
+      let result = "";
+
+      // 코드 구현 영역
+      for (let i = 0; i < num; i++) { // i가 num이 작을 때까지 순환
+        result += "*"; // 별이 찍히는 것
+      }
+
+      return result;
+    };
+
+    /* main code */
+    let input = [5, 7, 12];
+
+    for (let i = 0; i < input.length; i++) {
+      console.log(`#${i + 1} ${answer(input[i])}`);
+    }
+  </script>
+</body>
+
+</html>
